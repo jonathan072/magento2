@@ -1,0 +1,13 @@
+{
+    "name": "jdom/module-lazyimg",
+    "description": "Magento 2.4.6 Lazy Load Module",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Jdom\\LazyImg\\": ""
+        }
+    }
+}
+
