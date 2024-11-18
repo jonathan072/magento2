@@ -1,4 +1,5 @@
 //(Chrome / Firefox / Opera / Edge)
+function newdefer() {
     var lazyloadImages;
     if ("IntersectionObserver" in window) {
         lazyloadImages = document.querySelectorAll("img");
@@ -19,14 +20,6 @@
     } else {
         var lazyloadThrottleTimeout;
         lazyloadImages = document.querySelectorAll("img");
-        /**
-         * This function is called when the page is scrolled, resized, or
-         * orientation-changed. It iterates over the lazyloadImages array,
-         * and loads the image if it is visible on the screen.
-         * If the image is loaded, it is removed from the array, to prevent
-         * it from being loaded multiple times.
-         * If the array is empty, the event listeners are removed.
-         */
         function lazyload() {
             if (lazyloadThrottleTimeout) {
                 clearTimeout(lazyloadThrottleTimeout);
