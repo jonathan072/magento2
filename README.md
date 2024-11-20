@@ -1,7 +1,7 @@
-# module-lazyimg
+# magento2-lazyimg
 **Description:**
  A Magento 2 module that implements lazy loading for images, improving page load times and user experience.
-
+ 
 **Author:**
 * Jonathan Domínguez.
 * Email: dominguezjonathan072@gmail.com
