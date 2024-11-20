@@ -8,8 +8,8 @@ function newdefer() {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
                     let image = entry.target;
-                    if (image.dataset.origen) {
-                        image.src = image.dataset.origen;
+                    if (image.dataset.source) {
+                        image.src = image.dataset.source;
                         imageObserver.unobserve(image);
                     }
                 }
@@ -29,7 +29,7 @@ function newdefer() {
                 let scrollTop = window.pageYOffset;
                 lazyloadImages.forEach(function(img) {
                     if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                        img.src = img.dataset.origen;
+                        img.src = img.dataset.source;
                     }
                 });
                 if (lazyloadImages.length == 0) {
